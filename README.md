@@ -1,0 +1,1 @@
+# rust-reqwest-practice-2025
