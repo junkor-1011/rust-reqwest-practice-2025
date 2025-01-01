@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "crates/*",
+]
+default-members = [
+    "crates/*",
+]
+resolver = "2"
+
+[workspace.dependencies]
+reqwest = { version = "0.12.12", default-features = false, features = ["json", "rustls-tls"] }

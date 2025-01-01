@@ -283,3 +283,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/rust,rust-analyzer,intellij+all,vim,emacs,visualstudiocode,linux,macos,windows
+
+
+# Added by cargo
+
+/target

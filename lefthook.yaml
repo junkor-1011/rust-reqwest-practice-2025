@@ -1,0 +1,11 @@
+pre-commit:
+  parallel: true
+  commands:
+    rust-formatter:
+      glob: "**/*.rs"
+      run: |
+        set -e
+        if ! rustfmt {staged_files} --edition=2021 --check; then
+          rustfmt {staged_files} --edition=2021
+          exit 1
+        fi
